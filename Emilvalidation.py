@@ -6,23 +6,25 @@ if len(email)>=6:# minimum length 6 caracter or more than that
             if  (email[-4]==".") ^ (email[-3]=="."):#dot position at index no. -4 or -3 ^ exor opretor use for only condition is true
                 for i in email :
                     if i==i.isspace():#check is space available in email
-                        k=1
+                        k=1;
                     elif i.isalpha():#check i is alpha
                         if i==i.upper():
-                            j=1
+                            j=1;
                     elif i.isdigit():#verify is it digit
-                        continue
+                        continue;
                     elif i=="_" or i=="." or i=="@":
-                        continue
+                        continue;
                     else:
-                        d=1
+                        d=1;
                 if k==1 or j==1 or d==1:
-                    print("Wrong Email")
+                    print("Wrong Email");
+                else:
+                    print("write Email");
             else:
-                print("Wromg Email")
+                print("Wromg Email");
         else:
-            print("Wromg Email")
+            print("Wromg Email");
     else:
-        print(" Wrong Email")
+        print(" Wrong Email");
 else:
-    print("Wrong Email ")
+    print("Wrong Email ");
